@@ -38,7 +38,7 @@ public class MainTest {
     @Test
     public void fizzBuzz_is_5_multiples() {
         //given
-        int input = 5;
+        int input = 5 * 2;
         String except = "Buzz";
         //when
         String actual = Main.fizzBuzz(input);
@@ -60,7 +60,7 @@ public class MainTest {
     @Test
     public void fizzBuzz_is_3_5_multiples() {
         //given
-        int input = 3 * 5;
+        int input = 3 * 5 * 4;
         String except = "FizzBuzz";
         //when
         String actual = Main.fizzBuzz(input);
