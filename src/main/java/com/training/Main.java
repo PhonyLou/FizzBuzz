@@ -24,6 +24,11 @@ public class Main {
         boolean isContain5 = inputStr.contains("5");
         boolean isContain7 = inputStr.contains("7");
 
+        if (isContain5) {
+            isContain3 = false;
+            isDivisible3 = false;
+        }
+
         if (isContain3) return FIZZ;
 
         String result = "";
