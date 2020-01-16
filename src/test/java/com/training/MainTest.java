@@ -82,7 +82,7 @@ public class MainTest {
     @Test
     public void fizzBuzz_is_5_7_multiples() {
         //given
-        int input = (5 * 7) * 2;
+        int input = (5 * 7) * 3;
         String except = "BuzzWhizz";
         //when
         String actual = Main.fizzBuzz(input);
@@ -122,4 +122,21 @@ public class MainTest {
         //then
         assertEquals(except, actual);
     }
+
+    @Test
+    public void fizzBuzz_is_contain_7() {
+        //given
+        int input = 75;
+        String except = "Fizz";
+        //when
+        String actual = Main.fizzBuzz(input);
+        //then
+        assertEquals(except, actual);
+
+        int input2 = 7;
+        String except2 = "Whizz";
+        String actual2 = Main.fizzBuzz(input2);
+        assertEquals(except2, actual2);
+    }
+
 }
