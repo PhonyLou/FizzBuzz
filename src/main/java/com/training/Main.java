@@ -26,38 +26,10 @@ public class Main {
         boolean isContain5 = inputStr.contains("5");
         boolean isContain7 = inputStr.contains("7");
 
-        if (isContain3) {
-            return FIZZ;
-        }
 
-        if (isDivisible3 && isDivisible5 && isDivisible7) {
-            return FIZZ + BUZZ + WHIZZ;
-        }
+        String result = "";
+        if (isDivisible3) result += FIZZ;
 
-        if (isDivisible5 && isDivisible7) {
-            return BUZZ + WHIZZ;
-        }
-
-        if (isDivisible3 && isDivisible7) {
-            return FIZZ + WHIZZ;
-        }
-
-        if (isDivisible3 && isDivisible5) {
-            return FIZZ + BUZZ;
-        }
-
-        if (isDivisible3) {
-            return FIZZ;
-        }
-
-        if (isDivisible5) {
-            return BUZZ;
-        }
-
-
-        if (isDivisible7) {
-            return WHIZZ;
-        }
-        return String.valueOf(input);
+        return result.equals("") ? inputStr : result;
     }
 }
