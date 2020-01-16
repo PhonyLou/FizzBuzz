@@ -29,6 +29,7 @@ public class Main {
 
         String result = "";
         if (isDivisible3) result += FIZZ;
+        if (isDivisible5) result += BUZZ;
 
         return result.equals("") ? inputStr : result;
     }
