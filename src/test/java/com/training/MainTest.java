@@ -46,17 +46,17 @@ public class MainTest {
         assertEquals(except, actual);
     }
 
-//    @Test
-//    public void fizzBuzz_is_7_multiples() {
-//        //given
-//        int input = 7;
-//        String except = "Whizz";
-//        //when
-//        String actual = Main.fizzBuzz(input);
-//        //then
-//        assertEquals(except, actual);
-//    }
-//
+    @Test
+    public void fizzBuzz_is_7_multiples() {
+        //given
+        int input = 7;
+        String except = "Whizz";
+        //when
+        String actual = Main.fizzBuzz(input);
+        //then
+        assertEquals(except, actual);
+    }
+
 //    @Test
 //    public void fizzBuzz_is_3_5_multiples() {
 //        //given

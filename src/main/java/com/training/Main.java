@@ -25,11 +25,11 @@ public class Main {
         boolean isContain3 = inputStr.contains("3");
         boolean isContain5 = inputStr.contains("5");
         boolean isContain7 = inputStr.contains("7");
-
-
+        
         String result = "";
         if (isDivisible3) result += FIZZ;
         if (isDivisible5) result += BUZZ;
+        if (isDivisible7) result += WHIZZ;
 
         return result.equals("") ? inputStr : result;
     }
