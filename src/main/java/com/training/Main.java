@@ -10,6 +10,12 @@ public class Main {
 
     static String fizzBuzz(int input) {
 
+        String inputStr = String.valueOf(input);
+
+        if (inputStr.contains("3")) {
+            return "Fizz";
+        }
+
         if (input % (3 * 5 * 7) == 0) {
             return "FizzBuzzWhizz";
         }
