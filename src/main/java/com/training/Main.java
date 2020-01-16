@@ -1,12 +1,10 @@
 package com.training;
 
-import javafx.beans.binding.When;
-
 public class Main {
 
-    public static final String FIZZ = "Fizz";
-    public static final String BUZZ = "Buzz";
-    public static final String WHIZZ = "Whizz";
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+    private static final String WHIZZ = "Whizz";
 
 
     public static void main(String[] args) {
@@ -25,7 +23,9 @@ public class Main {
         boolean isContain3 = inputStr.contains("3");
         boolean isContain5 = inputStr.contains("5");
         boolean isContain7 = inputStr.contains("7");
-        
+
+        if (isContain3) return FIZZ;
+
         String result = "";
         if (isDivisible3) result += FIZZ;
         if (isDivisible5) result += BUZZ;
